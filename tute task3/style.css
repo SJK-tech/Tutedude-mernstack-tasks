@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(235, 141, 107);
+}
+
+.head{
+    color: blue;
+}
+
+#bglime{
+    background-color: lime;
+    font-size: 50px;
+}
+
+.red{
+    color: red;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+#para{
+    color:green;
+    font-size: 20px;
+}
+
+.blac, .dark{
+    color: rgb(0, 0, 0);
+}
+
+.blac{
+    font-size: 30px;
+}
+
+ul{
+    color: rgb(255, 255, 255);
+}
+
+
+ul > li:first-child > a {
+    background-color: yellow;
+}
+
+ul > li:last-child > a {
+    background-color: purple;
+}
+
+ol > li:nth-child(2){
+    color: blue;
+}
+
+ol > li:nth-child(3){
+    color: red;
+}
+
+
+
+
+
