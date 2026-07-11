@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container {
+   /* border: 1px solid #ccc;   */
+   overflow:auto;
+}
+
+ul{
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+li{
+    display: inline;
+}
+
+ul>li>a{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+a:hover{
+    color: rgb(9, 167, 246);
+    border-bottom: 2px solid rgb(9, 167, 246);
+}
+
+.logo{
+    width: 100px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 60px;
+    
+}
+
+.user{
+    font-size: 20px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    color: rgb(8, 171, 200);
+    border: 1px solid rgb(226, 233, 234);
+    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: rgb(212, 243, 247);
+}
+
+.leftdiv, .rightdiv{
+    margin-top: 10vh;
+}
+
+.leftdiv{
+    float: left;
+    width: 40vw;
+    height: 50vh;
+    margin-left: 5vw;
+    border: 1px solid rgb(226, 233, 234);
+}
+
+.rightdiv{
+    float: right;
+    width: 40vw;
+    height: 50vh;
+    margin-right: 5vw;
+    border: 1px solid rgb(226, 233, 234);
+}
+
+.hero-image{
+    float:right;
+}
+
+h1{
+    font-size: 4vw;
+    word-spacing: 0.7vw;
+}
+
+.highlight{
+    color: rgb(9, 167, 246);
+}
+
+.description{
+    color: rgb(144, 145, 145);
+    word-spacing: 0.4vw;
+}
+
+button{
+    background-color: rgb(9, 167, 246);
+    color: white;
+    font-size: 1vw;
+    padding: 4vh 7vw;
+    border-radius: 1vw;
+    border: none;
+    margin-top: 5vh;
+}
+
+button:hover{
+    background-color: rgb(164, 165, 166);
+    cursor: pointer;
+}
