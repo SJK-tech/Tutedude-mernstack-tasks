@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container {
+   overflow:auto;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+ul{
+    display: flex;
+
+    margin-top: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+
+ul>li>a{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    padding: 10px 20px;
+}
+
+a:hover{
+    color: rgb(9, 167, 246);
+    border-bottom: 2px solid rgb(9, 167, 246);
+}
+
+.logo{
+    width: 100px;
+    
+}
+
+.user{
+    font-size: 20px;
+   
+    color: rgb(8, 171, 200);
+    border: 1px solid rgb(226, 233, 234);
+    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: rgb(212, 243, 247);
+}
+
+.leftdiv, .rightdiv{
+    flex:1;
+}
+
+.Hero{
+    margin-top: 70px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.hero-image{
+    width:100%;
+    height:auto;
+}
+
+h1{
+    font-size: 70px;
+    word-spacing: 10px;
+}
+
+.highlight{
+    color: rgb(9, 167, 246);
+}
+
+.description{
+    color: rgb(144, 145, 145);
+    word-spacing: 5px;
+}
+
+.book{
+    background-color: rgb(9, 167, 246);
+    color: white;
+    font-size: 20px;
+    padding: 35px 75px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+}
+
+.book:hover{
+    background-color: rgb(164, 165, 166);
+    cursor: pointer;
+}
+
+.menu, .menubtn{
+    display: none;
+}
+
+
+
+@media (max-width:992px){
+    ul>li>a{
+        font-size: 15px;
+    }
+    .logo{
+        width:70px;
+    }
+    .user{
+        font-size: 15px; 
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: smaller;
+    }
+    button{
+        padding: 20px 30px;
+        font-size: smaller;
+    }
+    
+    .hero-image{
+        width:80%;
+    }
+}
+
+
+
+@media (max-width:768px){
+
+    ul{
+        display: none;
+    }
+    
+    .Hero{
+        flex-direction: column;
+    }
+
+    .menubtn{
+        display:block;
+        width:40px;
+        background-color: white;
+        border: none;
+        font-size: 30px;
+    }
+
+    .menu{
+        display: none;
+        background: black;
+        position:fixed;
+        top:0;
+        right:0;
+        width:60vw;
+        height:100vh;
+        padding-top:200px;
+    }
+
+    .menu>a{
+        font-size: 20px;
+
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 30px;
+        text-align: center;
+    }
+
+
+    .menubtn:focus + .menu{
+        display:block;
+    }
+}
